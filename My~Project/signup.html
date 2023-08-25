@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+    <link rel="shortcut icon" href="Image/pic1.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="maine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-times" id="cansle"></i>
+        </label>
+        <select id="language-select">
+            <option value="en" style="color: rgba(238, 12, 99, 0.685);">English</option>
+            <option value="am" style="color: rgb(72, 11, 240);">አማርኛ</option>
+          </select>
+        <label class="logo">My Web <label id="log">Site</label></label>
+        <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="experience.html" id="experience">Experience</a></li>
+            <li><a href="contact.html" id="contact">Contact US</a></li>
+            <li><a href="hobbies.html" id="hobbies" style="color: rgb(245, 115, 9);">Hobbies</a></li>
+            <li><a href="about.html" id="about">About</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <form action="login.html" method="post" id="signup">
+            <img src="Image/signup.png" alt="Sign UP"> <br> <br> <br>
+            <h1 id="sig">Sign UP Here</h1>
+            <p>First Name</p>
+            <input type="text" placeholder="Enter First Name" maxlength="10" required>
+            <p>Last Name</p>
+            <input type="text" placeholder="Enter Last Name" maxlength="10" required>
+            <p>Email Address</p>
+            <input type="email" placeholder="Enter Your Email" maxlength="20" required>
+            <p>Password</p>
+            <input type="password" placeholder="Password" minlength="8" required>
+            <p>Confirm Password</p>
+            <input type="password" placeholder="Confirm Password" minlength="8" required>
+            <p>Phone Number</p>
+            <input type="number" placeholder="09--------" minlength="10" maxlength="10" required>
+            <p>Sex</p>
+            <select id="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <input type="checkbox" required>
+            <label>I am not robot</label> <br> <br>
+            <input type="submit" value="Sign UP"> <br> <br>
+            <a href="login.html" id="for">Log In</a>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
