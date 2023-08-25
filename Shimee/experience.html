@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="stayle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#08cf62 50%, #ebdb07 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(247, 5, 5, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4c1919;
+  margin: 1em 0;
+}
+p {
+  color: #575a7b;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper {
+  background-color: #2c7bfe;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #2c7bfe;
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-times" id="cansle"></i>
+        </label>
+        <label class="logo">Geez<label id="log">Forex</label></label>
+        <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="experience.html" id="experience" style="color: rgb(245, 115, 9);">Experience</a></li>
+            <li><a href="contact.html" id="contact">Contact US</a></li>
+            <li><a href="hobbies.html" id="hobbies">Hobbies</a></li>
+            <li><a href="about.html" id="about">About</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="row">
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div>
+                </div>
+                <h3>Hip hop dance</h3>
+                <p>
+                  Hip hop dance is a range of street dance styles primarily performed to hip hop music or that have evolved as part of hip hop culture. It is influenced by a wide range of styles that were created in the 1970s and made popular by dance crews in the United States
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div>
+                </div>
+                <h3>Tap dance</h3>
+                <p>
+                  Tap dance is a form of dance characterized by using the sounds of tap shoes striking the floor as a form of percussion. Two major variations on tap dance exist: rhythm tap and Broadway tap. Broadway tap focuses on dance; it is widely performed in musical theater
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div>
+                </div>
+                <h3>Ballet</h3>
+                <p>
+                  Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century and later developed into a concert dance form in France and Russia. It has since become a widespread and highly technical form of dance with its own vocabulary
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div>
+                </div>
+                <h3>Jazz dance</h3>
+                <p>
+                  Jazz dance is a performance dance and style that arose in the United States in the mid 20th century. Jazz dance may allude to vernacular jazz about to Broadway or dramatic jazz. The two types expand on African American vernacular styles of dance that arose with jazz musi
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div>
+                </div>
+                <h3>Modern dance</h3>
+                <p>
+                  Modern dance is a broad genre of western concert or theatrical dance which included dance styles such as ballet, folk, ethnic, religious, and social dancing; and primarily arose out of Europe and the United States in the late 19th and early 20th centuries
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div>
+                </div>
+                <h3>Contemporary dance</h3>
+                <p>
+                  Contemporary dance is a genre of dance performance that developed during the mid-twentieth century and has since grown to become one of the dominant genres for formally trained dancers throughout the world, with particularly strong popularity in the U.S. and Europe
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
